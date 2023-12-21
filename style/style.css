@@ -15,3 +15,35 @@
     border-left: 0;
 }
 
+/* MAIN */
+
+/* main-navbar */
+
+#main-navbar{
+    width: 150px;
+    height: calc(100vh - 54px);
+    background-color: rgb(4, 30, 52);
+}
+
+/* main-section */
+
+#main-section{
+    width: calc(100% - 150px);
+    height: calc(100vh - 54px);
+    background-color: aquamarine;
+}
+
+/* main-header */
+
+#main-header{
+    height: 100px;
+    background-color: rgb(29, 114, 232);
+}
+
+/* main-content */
+
+#main-content{
+    height: calc(100vh - 154px);
+    overflow: auto;
+}
+
