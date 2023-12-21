@@ -1,3 +1,18 @@
+:root{
+    --height-main-navbar: calc(100vh - 54px);
+    --width-main-navbar: 150px;
+    --height-main-section: calc(100vh - 54px);
+    --width-main-section: calc(100% - 150px);
+    --height-main-header: 100px;
+    --height-main-content: calc(100vh - 154px);
+   
+   
+}
+
+img{
+    width: 100%;
+}
+
 
 /* HEADER */
 
@@ -20,30 +35,35 @@
 /* main-navbar */
 
 #main-navbar{
-    width: 150px;
-    height: calc(100vh - 54px);
+    width: var(--width-main-navbar);
+    height: var(--height-main-navbar);
     background-color: rgb(4, 30, 52);
 }
 
 /* main-section */
 
 #main-section{
-    width: calc(100% - 150px);
-    height: calc(100vh - 54px);
+    width: var(--width-main-section);
+    height: var(--height-main-section);
     background-color: aquamarine;
+    overflow: scroll;
 }
 
 /* main-header */
 
 #main-header{
-    height: 100px;
+    min-height: var(--height-main-header);
     background-color: rgb(29, 114, 232);
 }
 
 /* main-content */
 
 #main-content{
-    height: calc(100vh - 154px);
-    overflow: auto;
+    height: var(--height-main-content);
+}
+
+.container-icon-class{
+    width: 35px;
+    padding-right: 5px ;
 }
 
