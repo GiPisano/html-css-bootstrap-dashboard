@@ -4,7 +4,7 @@
     --height-main-section: calc(100vh - 54px);
     --width-main-section: calc(100% - 150px);
     --height-main-header: 100px;
-    --height-main-content: calc(100vh - 154px);
+    --height-main-content: calc(100vh - 154px)
    
    
 }
@@ -36,7 +36,7 @@ img{
 
 #main-navbar{
     width: var(--width-main-navbar);
-    height: var(--height-main-navbar);
+    min-height: var(--height-main-navbar);
     background-color: rgb(4, 30, 52);
 }
 
@@ -46,7 +46,6 @@ img{
     width: var(--width-main-section);
     height: var(--height-main-section);
     background-color: aquamarine;
-    overflow: scroll;
 }
 
 /* main-header */
@@ -60,10 +59,29 @@ img{
 
 #main-content{
     height: var(--height-main-content);
+    background-color: rgb(248, 249, 250);
+    overflow: scroll;
 }
 
 .container-icon-class{
     width: 35px;
     padding-right: 5px ;
+}
+
+
+
+@media  screen and (min-width: 925px) {
+    #main-content{
+        display: flex;
+    }
+
+    .main-content-left{
+        width: 60%;
+    }
+
+    .main-content-right{
+        width: 40%;
+    }
+
 }
 
