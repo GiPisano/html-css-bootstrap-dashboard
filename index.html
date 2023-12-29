@@ -19,20 +19,21 @@
 <body>
     <!-- HEADER -->
     <header id="header">
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid bg-light-subtle">
-                <div class="d-flex">
-                    <img src="./img/logo.svg" alt="" class="d-none d-md-inline-block mx-3">
-                    <img src="./img/mobile-logo.png" class="d-md-none img-fluid mobile-logo mx-3" alt="">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
 
-                    <div class="input-group flex-nowrap">
-                        <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>
-                        <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel"
-                            aria-label="Search" aria-describedby="addon-wrapping">
-                    </div>
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" alt="" class="d-none d-md-inline-block mr-3">
+                    <img src="./img/mobile-logo.png" class="d-md-none img-fluid mobile-logo mr-3" alt="">
+                </a>
+
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel"
+                        aria-label="Search" aria-describedby="basic-addon1">
                 </div>
 
-                <div>
+                <div class="d-flex align-items-center">
                     <i class="bi bi-list-ul  d-none d-md-inline-block mx-3"></i>
                     <i class="bi bi-question-circle d-none d-md-inline-block mx-3"></i>
                     <i class="bi bi-three-dots-vertical d-none d-md-inline-block mx-3"></i>
@@ -56,15 +57,33 @@
         <div class="d-flex">
             <!-- NAV -->
             <div id="main-navbar">
+                <div class="p-3">
+                    <i class="bi bi-house-door-fill"></i>
+                    <span class="d-none d-md-inline-block">Home</span>
+                </div>
 
+                <div class="p-3">
+                    <i class="bi bi-bar-chart-fill"></i>
+                    <span class="d-none d-md-inline-block">Stats</span>
+                </div>
+
+                <div class="p-3">
+                    <i class="bi bi-reception-4"></i>
+                    <span class="d-none d-md-inline-block">Signals</span>
+                </div>
+
+                <div class="mt-auto p-3">
+                    <i class="bi bi-gear-fill"></i>
+                    <span class="d-none d-md-inline-block">Admin</span>
+                </div>
             </div>
 
             <!-- main-section -->
             <div id="main-section">
                 <!-- header main -->
-                <div id="main-header">
+                <div id="main-header" class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-md-4 col-lg-6">
                             <div class="d-flex">
                                 <p>Boolean</p>
                                 <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
@@ -84,18 +103,19 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-4">
+                        <div class="col-md-4 col-lg-3">
                             <p>Studenti online negli ultimi 30 minuti</p>
                             <p>125</p>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-md-4 col-lg-3">
                             <span>Nuovo Studente</span>
 
                             <button class="btn" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
-                                    class="bi bi-plus-square"></i></button>
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="bi bi-plus-square"></i>
+                            </button>
 
-                            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight"
+                            <!-- <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight"
                                 aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
@@ -165,7 +185,7 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
