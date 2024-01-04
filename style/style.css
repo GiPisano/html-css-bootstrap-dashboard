@@ -65,6 +65,16 @@ img{
 #main-header{
     min-height: var(--height-main-header);
     background-color: rgb(29, 114, 232);
+    color: white;
+}
+
+#main-header .badge{
+    background-color: rgb(22, 91, 186);
+}
+
+.plus-icon{
+    color: white;
+    font-size: 30px;
 }
 
 /* main-content */
@@ -104,3 +114,6 @@ img{
         width: 40%;
     }
 }
+
+
+
